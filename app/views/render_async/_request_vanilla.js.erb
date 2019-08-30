@@ -88,8 +88,8 @@
 
   var _renderAsyncFunction = _makeRequest;
 
-  <% if interval %>
   var _interval;
+  <% if interval %>
   var _renderAsyncFunction = function() {
     _makeRequest();
     _interval = setInterval(_makeRequest, <%= interval %>);
